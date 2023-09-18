@@ -1,42 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Produtos {
-    internal class Program {
+namespace Atribuicao {
+    class Program {
         static void Main(string[] args) {
+            int a = 10;
+            Console.WriteLine(a);
 
+            a += 2;
+            Console.WriteLine(a);
 
-            Console.WriteLine("Entre com os dados do produto:");
-            Console.WriteLine("Nome: ");
-            p.Nome = Console.ReadLine();
-            Console.WriteLine("Preço: ");
-            p.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.WriteLine("Quantidade no estoque: ");
-            p.Quantidade = int.Parse(Console.ReadLine());
+            a *= 3;
+            Console.WriteLine(a);
 
-            Console.WriteLine();
-            Console.WriteLine("Dados do produto: " + p);
+            string s = "ABC";
+            Console.WriteLine(s);
 
-            Console.WriteLine();
-            Console.Write("Digite o número de produtos  a ser adicionado ao estoque: ");
-            int qte = int.Parse(Console.ReadLine());
-            p.AdicionarProdutos(qte);
+            s += "DEF";
+            Console.WriteLine(s);
 
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);
-            
-            Console.WriteLine();
-            Console.Write("Digite o número de produtos  a ser removido do estoque: ");
-            qte = int.Parse(Console.ReadLine());
-            p.RemoverProdutos(qte);
+            a++;
+            Console.WriteLine(a);
 
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);
-
-
+            a--;
+            Console.WriteLine(a);
         }
     }
 }
